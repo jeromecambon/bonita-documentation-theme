@@ -33,6 +33,6 @@ jobs:
         uses: peter-evans/repository-dispatch@v2
         with:
           token: ${{ secrets.JC_TOKEN }}
-          repository: ${{ env.REPO_NAME }}
+          repository: jeromecambon/bonita-documentation-site
           event-type: new_theme_bundle
           client-payload: '{"release": "${{ env.RELEASE_VERSION }}", "release_notes_url": "${{ env.REPO_URL }}/releases/tag/${{ env.RELEASE_VERSION }}", "bundle_file": "bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip", "bundle_url": "${{ env.REPO_URL }}/releases/download/${{ env.RELEASE_VERSION }}/bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip"}'
