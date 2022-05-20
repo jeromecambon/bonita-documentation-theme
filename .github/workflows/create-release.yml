@@ -32,4 +32,4 @@ jobs:
           token: ${{ secrets.JC_TOKEN }}
           repository: jeromecambon/bonita-documentation-site
           event-type: new_theme_bundle
-          client-payload: '{"release": "${{ env.RELEASE_VERSION }}", "file": "bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip", "url": "https://github.com/jeromecambon/bonita-documentation-theme/releases/download/${{ env.RELEASE_VERSION }}/bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip"}'
+          client-payload: '{"release": "${{ env.RELEASE_VERSION }}", "bundle_file": "bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip", "bundle_url": "https://github.com/jeromecambon/bonita-documentation-theme/releases/download/${{ env.RELEASE_VERSION }}/bonita-documentation-theme-${{ env.RELEASE_VERSION }}.zip"}'
