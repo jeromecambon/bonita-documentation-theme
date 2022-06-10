@@ -1,4 +1,4 @@
-= Bonita Documentation Theme 3
+= Bonita Documentation Theme 4
 :icons: font
 ifdef::env-github[]
 :note-caption: :information_source:
